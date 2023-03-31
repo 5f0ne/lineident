@@ -40,6 +40,8 @@ class Controller():
         print("")
         print("Result:")
         print("---")
+        print("Hits: " + str(len(results)))
+        print("---")
         print("")
         if(len(results) > 0):
             for result in results:

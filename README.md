@@ -15,7 +15,7 @@ Searches files line by line for given words
 | Option | Short | Type | Default | Description |
 |---|---|---|---|---|
 |--path | -p | String | - | Path to file which shall be searched |
-|--method | -m | String | - | or = Check if one of the words is in the line <br> and = Checks if all words are in the line|
+|--method | -m | String | - | or = Check if one of the words is in the line <br> and = Checks if all words are in the line |
 |--words | -w | String | - | CSV input e.g.: dog,cat,hello |
 
 
@@ -48,13 +48,15 @@ Method: or
 
 Result:
 ---
+Hits : 2
+---
+
 Line Nr: 44
      --> cat
 Line Nr: 51
      --> dog
 Line Nr: 53
      --> people
-
 
 ################################################################################
 
