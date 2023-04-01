@@ -13,6 +13,7 @@ def main(args_=None):
     parser.add_argument("--path", "-p", type=str, required=True, help="Path to file which shall be searched")
     parser.add_argument("--method", "-m", type=str, choices=["and", "or"], required=True, help="Method to check for words. and/or")
     parser.add_argument("--words", "-w", type=str, required=True, help="CSV input e.g.: dog,cat,hello")
+    parser.add_argument("--format", "-f", type=str, choices=["std", "ol"], default="std", help="Output format: std/ol")
     args = parser.parse_args()
 
     ctrl = Controller(args.path)
@@ -22,7 +23,7 @@ def main(args_=None):
     results = p.process()
 
     ctrl.printOptions(p.words, args.method)
-    ctrl.printResults(results)
+    ctrl.printResults(results, args.format)
     ctrl.printExecutionTime()
    
 

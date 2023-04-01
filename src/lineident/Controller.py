@@ -36,7 +36,7 @@ class Controller():
         print(" Words: " + str(words))
         print("")
 
-    def printResults(self, results):
+    def printResults(self, results, format):
         print("")
         print("Result:")
         print("---")
@@ -45,8 +45,11 @@ class Controller():
         print("")
         if(len(results) > 0):
             for result in results:
-                print("Line Nr: " + str(result[0]))
-                print("     --> " + result[1])
+                if(format == "std"):
+                    print("Line Nr: " + str(result[0]))
+                    print("     --> " + result[1])
+                elif(format=="ol"):
+                    print("Line Nr: " + str(result[0]) + " --> " + result[1])
         else:
             print("No lines matched")
         print("")
