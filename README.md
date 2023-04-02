@@ -10,13 +10,13 @@ Searches files line by line for given words
 
 **From command line:**
 
-`python -m lineident --path PATH --method {and,or} --words WORDS`
+`--path PATH --words WORDS [--method {or,and}] [--format {std,wln}]`
 
 | Option | Short | Type | Default | Description |
 |---|---|---|---|---|
 |--path | -p | String | - | Path to file which shall be searched |
-|--method | -m | String | - | or = Check if one of the words is in the line <br> and = Checks if all words are in the line |
 |--words | -w | String | - | CSV input e.g.: dog,cat,hello |
+|--method | -m | String | or | or = Checks if one of the words is in the line <br> and = Checks if all words are in the line |
 |--format | -f | String | std | std = Standard output <br> wln = Without Line Number |
 
 

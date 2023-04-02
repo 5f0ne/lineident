@@ -11,9 +11,9 @@ def main(args_=None):
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--path", "-p", type=str, required=True, help="Path to file which shall be searched")
-    parser.add_argument("--method", "-m", type=str, choices=["and", "or"], required=True, help="Method to check for words. and/or")
     parser.add_argument("--words", "-w", type=str, required=True, help="CSV input e.g.: dog,cat,hello")
-    parser.add_argument("--format", "-f", type=str, choices=["std", "wln"], default="std", help="Output format: std/ol")
+    parser.add_argument("--method", "-m", type=str, choices=["or", "and"], default="or", help="Method to check for words. and/or")
+    parser.add_argument("--format", "-f", type=str, choices=["std", "wln"], default="std", help="Output format: std/wln")
     args = parser.parse_args()
 
     ctrl = Controller(args.path)
