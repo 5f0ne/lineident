@@ -46,10 +46,9 @@ class Controller():
         if(len(results) > 0):
             for result in results:
                 if(format == "std"):
-                    print("Line Nr: " + str(result[0]))
-                    print("     --> " + result[1])
-                elif(format=="ol"):
                     print("Line Nr: " + str(result[0]) + " --> " + result[1])
+                elif(format=="wln"):
+                    print(result[1])
         else:
             print("No lines matched")
         print("")

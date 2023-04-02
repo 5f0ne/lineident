@@ -17,7 +17,7 @@ Searches files line by line for given words
 |--path | -p | String | - | Path to file which shall be searched |
 |--method | -m | String | - | or = Check if one of the words is in the line <br> and = Checks if all words are in the line |
 |--words | -w | String | - | CSV input e.g.: dog,cat,hello |
-|--format | -f | String | std | std = Displayed like the example below <br> ol = One Line Result |
+|--format | -f | String | std | std = Standard output <br> wln = Without Line Number |
 
 
 # Example
@@ -49,15 +49,12 @@ Method: or
 
 Result:
 ---
-Hits : 2
+Hits: 2
 ---
 
-Line Nr: 44
-     --> cat
-Line Nr: 51
-     --> dog
-Line Nr: 53
-     --> people
+Line Nr: 44 --> cat
+Line Nr: 51 --> dog
+Line Nr: 53 --> people
 
 ################################################################################
 
